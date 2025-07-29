@@ -10,10 +10,10 @@ class User(Base):
     id: Mapped[str] = mapped_column(primary_key=True)
     email: Mapped[str] = mapped_column(unique=True)
     email_verified: Mapped[bool]
-    username: Mapped[str]
     name: Mapped[str]
-    job_title: Mapped[str]
-    surname: Mapped[str]
+    preferred_username: Mapped[str]
+    given_name: Mapped[str]
+    family_name: Mapped[str]
     tasks: Mapped[list['Task']] = relationship(back_populates='user')
 
 

@@ -27,7 +27,7 @@ const confirmDeleteBtn = document.getElementById('confirm-delete-btn')
 const TASKS_STORAGE_KEY = 'warrantyTasks_v2'
 const loader = document.getElementById('loader')
 
-function formatNoteDate(timestamp) {
+function formatTaskDate(timestamp) {
   if (!timestamp) return ''
   try {
     const date = new Date(timestamp)
@@ -160,7 +160,7 @@ function showViewModal(task) {
 function showEditModal(task) {
   editTaskIdInput.value = task.id
   editTaskTitleInput.value = task.title
-  edittaskDescriptionInput.value = task.content
+  editTaskDescriptionInput.value = task.content
   editTaskModal.show()
 }
 
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return
   }
   viewTaskModal = new bootstrap.Modal(viewTaskModalElement)
-  edittaskModal = new bootstrap.Modal(editTaskModalElement)
+  editTaskModal = new bootstrap.Modal(editTaskModalElement)
   deleteConfirmModal = new bootstrap.Modal(deleteConfirmModalElement)
 
   renderTasks()

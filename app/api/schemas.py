@@ -9,10 +9,10 @@ class AddUser(BaseModel):
     id: str
     email: str
     email_verified: bool
-    username: str
     name: str
-    job_title: str
-    surname: str
+    preferred_username: str
+    given_name: str
+    family_name: str
 
 
 class AddTask(BaseModel):
