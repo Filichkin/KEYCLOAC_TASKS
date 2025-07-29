@@ -12,7 +12,7 @@ class User(Base):
     email_verified: Mapped[bool]
     username: Mapped[str]
     name: Mapped[str]
-    title: Mapped[str]
+    job_title: Mapped[str]
     surname: Mapped[str]
     tasks: Mapped[list['Task']] = relationship(back_populates='user')
 

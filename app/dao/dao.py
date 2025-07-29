@@ -6,5 +6,5 @@ class UsersDAO(BaseDAO):
     model = User
 
 
-class TaskssDAO(BaseDAO):
+class TasksDAO(BaseDAO):
     model = Task
