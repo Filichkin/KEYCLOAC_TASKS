@@ -28,3 +28,13 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000
 ngrok http 8000
 ```
 
+<table>
+  <tr>
+    <td align="center"><img src="examples/sign_in.png" width="400"/><br><b>Экран входа</b></td>
+    <td align="center"><img src="examples/app.png" width="400"/><br><b>Основное приложение</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="examples/keycloak.png" width="400"/><br><b>Keycloak UI</b></td>
+    <td align="center"><img src="examples/amvera.png" width="400"/><br><b>Панель Amvera</b></td>
+  </tr>
+</table>
